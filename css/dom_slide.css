@@ -1,0 +1,152 @@
+.slider-wrapper {
+    cursor: pointer;
+}
+
+.slider__inner {
+    position: relative;
+    padding-bottom: 30px;
+    overflow: hidden;
+    height: 100%;
+    background-color: #2aa41c;
+}
+
+.slick-dots {
+    list-style-type: none;
+}
+
+.slick-dots li {
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+}
+
+.slick-dots button {
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 0;
+    opacity: 1;
+    width: 12px;
+    height: 12px;
+    border: 3px solid #fff;
+    background-color: transparent;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.slick-active>button {
+    background-color: #fff;
+}
+
+.swiper-wrapper,
+.swiper-slide {
+    height: auto;
+}
+
+.slider-item {
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    grid-template-rows: 360px 360px;
+}
+
+.slick-slide {
+    margin: 0 10px;
+}
+
+
+/* the parent */
+
+.slick-list {
+    margin: 0 -10px;
+}
+
+.slider-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.video {
+    object-fit: contain;
+    height: 100%;
+    width: 100%;
+    grid-row: 1 / 3;
+}
+
+.slider-item .slider-video {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    grid-row: 1 / 3;
+}
+
+.slick-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+    .slick-dots {
+        margin-top: 10px;
+    }
+    .slick-dots button {
+        margin: 0 5px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .slider-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider-desktop {
+        display: none;
+    }
+    .slider-item {
+        height: 155px;
+        overflow: hidden;
+        display: flex;
+    }
+    .slider-item img {
+        object-fit: contain;
+    }
+    .slick-dots button {
+        width: 7px;
+        height: 7px;
+        border: 1px solid #fff;
+        margin: 0;
+    }
+    .slick-dots li {
+        width: 7px;
+        height: 7px;
+        margin: 0 2px;
+    }
+    .slick-slide {
+        margin: 0 4px;
+    }
+    .slick-dots {
+        margin-top: 5px;
+    }
+    .slider-item img {
+        width: inherit;
+        height: 100%;
+        object-fit: contain;
+    }
+    .slider-item .slider-video {
+        object-fit: contain;
+    }
+    .slider-slide {
+        width: 274px;
+    }
+    .slider-slide--.slider-video {
+        width: 122px;
+    }
+    .slick-list {
+        padding: 0 !important;
+    }
+}
